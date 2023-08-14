@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora - Desarrollo Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="p5.js"></script>
+</head>
+<body>
+<center>
+    <form name="Calculadora">
+
+        <table border="10">
+        
+        <tr>
+         <td colspan="4"> 
+        <input type="text" class="txtbox" name="txtboxnros" value="0" disabled style="width: 200px; font-size: 40px;">
+        </td></tr>
+            <tr>
+                <td><input type="button" class="c-button" value="C" onclick="limpiar()"></td>
+                <td><input type="button" class="operator-button" value="√" onclick="raiz()"></td>
+                <td><input type="button" class="operator-button" value="^" onclick="ingresaoperacion('**')"></td>
+                <td><input type="button" class="operator-button" value="÷" onclick="ingresaoperacion('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number-button" value="7" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="number-button" value="8" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="number-button" value="9" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="operator-button" value="x" onclick="ingresaoperacion('*')"></td>
+            
+            </tr>
+            <tr>
+                <td><input type="button" class="number-button" value="4" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="number-button" value="5" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="number-button" value="6" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="operator-button" value="-" onclick="ingresaoperacion(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number-button" value="1" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="number-button" value="2" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="number-button" value="3" onclick="ingresarnumero(this.value)"></td>
+                <td rowspan="2"><input type="button" class="mas-button" value="+" onclick="ingresaoperacion(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number-button" value="0" onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="number-button" value="." onclick="ingresarnumero(this.value)"></td>
+                <td><input type="button" class="operator-button" value="=" onclick="resultado()"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <footer>
+        <p>&copy; 2023 Fernando Aguilar. Todos los derechos reservados.</p>
+      </footer>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "CalculatorFont"; /* Nombre de la fuente */
+    src: url(digital_7/digital-7\ \(mono\).ttf); /* Ruta a tu archivo de fuente */
+}
+
+
+.txtbox{
+    background-color: #ffffff;
+    width: 200px;
+    font-family: "CalculatorFont", sans-serif;
+    font-size: 30px;
+}
+
+.number-button{
+    background-color: #000000;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 25%;
+}
+.operator-button{
+    background-color: #436fff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 25%; 
+}
+.c-button{
+    background-color: #eb1e1e;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 25%;
+}
+.mas-button{
+    background-color: #436fff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 25%;
+}
+
+input[type="text"] {
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 98%;
+    box-shadow: 3px 3px 3px black;
+}
+
+body {
+    background-color: #F4F6F8;
+/*     background-image: url('fondo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+table {
+    background-color: #d8d5d5;
+    padding: 5px 5px;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #cecece;
+    padding: 10px 0;
+  }
